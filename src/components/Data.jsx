@@ -19,10 +19,13 @@ export const dataabout = {
     "I am a beginner in programming, but I am passionate about technology and eager to learn. I am always looking for opportunities to improve my skills and contribute to the field.",
 };
 
-export const Experience1 = {
+export const dataContentDetail = {
   title: "Experience",
   year: "2023",
-  exptitle: "Restaurant Review",
+  img: "",
+  contenttitle: "Restaurant Review",
+  iconlink: "",
   description:
     "This application is a restaurant review application developed with React Native. It allows users to find and review restaurants in their area.",
+  tag: "",
 };
