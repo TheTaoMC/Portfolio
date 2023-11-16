@@ -5,7 +5,7 @@ const Tag = ({ ishoverin, datain }) => {
         {datain.map((data, index) => (
           <div
             key={`${data}-Tag-${index}`}
-            className={`bg-colortext4  p-1 rounded-md ${
+            className={`bg-colortext4  p-1 mb-2 rounded-md ${
               ishoverin ? "text-colortext1" : "text-colortext2"
             }`}
           >
@@ -14,7 +14,7 @@ const Tag = ({ ishoverin, datain }) => {
         ))}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Tag;
+export default Tag
