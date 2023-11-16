@@ -25,7 +25,7 @@ const Experience = () => {
   return (
     <>
       <div className="">
-        <div className="font-semibold text-colortext3 mb-4">
+        <div className="font-semibold text-colortext3 mb-4 px-2">
           {dataContentDetail.title}
         </div>
 
