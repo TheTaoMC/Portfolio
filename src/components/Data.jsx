@@ -114,7 +114,7 @@ export const dataEducation = [
 export const dataExperience = [
   {
     year: "2023",
-    img: "imgExp1",
+    img: "",
     contenttitle: "นักเขียนอิสระ",
     contenttitlelink: "",
     iconlinks: [
@@ -132,7 +132,7 @@ export const dataExperience = [
   },
   {
     year: "2022",
-    img: "imgExp2",
+    img: "",
     contenttitle: "ผู้ช่วยสอน",
     contenttitlelink: "",
     iconlinks: [
@@ -148,7 +148,7 @@ export const dataExperience = [
   },
   {
     year: "2021",
-    img: "imgExp3",
+    img: "",
     contenttitle: "ผู้พัฒนาเว็บไซต์",
     contenttitlelink: "",
     iconlinks: [

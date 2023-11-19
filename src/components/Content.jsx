@@ -17,6 +17,8 @@ import {
   dataExperience,
   dataCertification,
 } from "./Data"
+import FooterR from "./Contents/FooterR"
+
 const Content = () => {
   return (
     <>
@@ -26,6 +28,7 @@ const Content = () => {
         <ContentContainer title={"Experience"} data={dataExperience} />
         <ContentContainer title={"Project"} data={dataProject} />
         <ContentContainer title={"Certification"} data={dataCertification} />
+        <FooterR />
       </div>
     </>
   )

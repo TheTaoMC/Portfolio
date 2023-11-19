@@ -38,7 +38,8 @@ const ContentContainer = ({ title, data = [] }) => {
               {data.year}
             </Year>
             {/* Img */}
-            {data.img === "" ? "" : <Img imgin={data.img} />}
+            {}
+            <Img imgin={data.img} />
           </div>
           <div className="grid gap-y-4">
             {/* Contenttitle */}

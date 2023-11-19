@@ -1,4 +1,8 @@
 const Img = ({ imgin, title }) => {
+  if (!imgin || imgin === "" || imgin === undefined) {
+    return null
+  }
+
   return (
     <>
       <div>
@@ -9,7 +13,7 @@ const Img = ({ imgin, title }) => {
         />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Img;
+export default Img
