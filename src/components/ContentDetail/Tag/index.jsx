@@ -3,14 +3,14 @@ const Tag = ({ ishoverin, datain }) => {
 
   return (
     <div className="flex gap-2 text-sm">
-      {datain.map((data, index) => (
+      {datain.map((e, i) => (
         <div
-          key={`${data}-Tag-${index}`}
+          key={`${e}-Tag-${i}`}
           className={`bg-colortext4 p-1 mb-2 rounded-md ${
             ishoverin ? "text-colortext1" : "text-colortext2"
           }`}
         >
-          {data}
+          {e}
         </div>
       ))}
     </div>
