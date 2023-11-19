@@ -21,7 +21,7 @@ import Tag from "../ContentDetail/Tag"
 
 const Experience = () => {
   const [ishover, setIshover] = useState({})
-  console.log(ishover)
+  console.log("setIshover:", ishover)
 
   const Section_ID = "Experience-Section"
   return (
@@ -75,10 +75,18 @@ const Experience = () => {
               ))}
               <div>
                 {/* Tag */}
-                {data.tags.map((data, index) => (
+                {/*                {data.tags.map((data, index) => (
                   <Tag
                     key={index}
                     ishoverin={ishover[`${Section_ID}-${index}`]}
+                    datain={data}
+                  />
+                ))} */}
+
+                {data.tags.map((data, i) => (
+                  <Tag
+                    key={i}
+                    ishoverin={ishover[`${Section_ID}-${index}`]} //ไอ้สัส หาตั้งนาน
                     datain={data}
                   />
                 ))}
