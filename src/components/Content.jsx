@@ -19,15 +19,35 @@ import {
 } from "./Data"
 import FooterR from "./Contents/FooterR"
 
-const Content = () => {
+const Content = ({ onaddsectionidsin }) => {
   return (
     <>
       <div className="grid gap-y-32 px-2">
-        <About />
-        <ContentContainer title={"Education"} data={dataEducation} />
-        <ContentContainer title={"Experience"} data={dataExperience} />
-        <ContentContainer title={"Project"} data={dataProject} />
-        <ContentContainer title={"Certification"} data={dataCertification} />
+        <About onaddsectionidsin={onaddsectionidsin}  title={"About"} />
+        <ContentContainer
+          onaddsectionidsin={onaddsectionidsin}
+          
+          title={"Education"}
+          data={dataEducation}
+        />
+        <ContentContainer
+          onaddsectionidsin={onaddsectionidsin}
+        
+          title={"Experience"}
+          data={dataExperience}
+        />
+        <ContentContainer
+          onaddsectionidsin={onaddsectionidsin}
+        
+          title={"Project"}
+          data={dataProject}
+        />
+        <ContentContainer
+          onaddsectionidsin={onaddsectionidsin}
+         
+          title={"Certification"}
+          data={dataCertification}
+        />
         <FooterR />
       </div>
     </>

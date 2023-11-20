@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { useState } from "react"
 import Contenttitle from "../ContentDetail/Contenttitle"
 import Description from "../ContentDetail/Description"
@@ -12,14 +13,21 @@ import Year from "../ContentDetail/Year"
     data={[]}
 />
 */
-const ContentContainer = ({ title, data = [] }) => {
+const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
   const [ishover, setIshover] = useState({})
-  console.log("setIshover:", ishover)
+  //console.log("setIshover:", ishover)
 
   const Section_ID = `${title}-section`
+
+  useEffect(() => {
+    onaddsectionidsin(Section_ID, title)
+  }, [])
+
   return (
-    <div id={Section_ID}>
-      <div className="font-semibold text-colortext3 mb-4 px-2">{title}</div>
+    <div className="scroll-m-5" id={Section_ID}>
+      <div id={title} className="font-semibold text-colortext3 mb-4 px-2">
+        {title}
+      </div>
       {data.map((data, index) => (
         <div
           key={`${Section_ID}-${index}-${data.contenttitle.replaceAll(

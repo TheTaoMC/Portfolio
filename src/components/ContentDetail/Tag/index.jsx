@@ -1,5 +1,5 @@
 const Tag = ({ ishoverin, datain }) => {
-  console.log("Tag ishover:", ishoverin)
+  //console.log("Tag ishover:", ishoverin)
 
   return (
     <div className="flex gap-2 text-sm">
