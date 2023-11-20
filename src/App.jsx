@@ -11,6 +11,7 @@ function App() {
   const [sectionnames, setSectionnames] = useState([])
   const [navitems, setNavitems] = useState([])
   const [sectioncurrent, setSectioncurrent] = useState("")
+  //console.log("sectionids: ", sectionids)
 
   const addsectionids = (sectionid, title) => {
     //console.log(sectionid)
@@ -28,26 +29,34 @@ function App() {
   }
 
   const handleScroll = () => {
-    //console.log("scroll")
     for (let index = 0; index < sectionids.length; index++) {
-      const el = sectionids[index]
-      console.log("scroll", el)
+      const el = sectionids[index];
+      const elOffsetTop = document.getElementById(el).getClientRects()[0].y;
+      const height = document.getElementById(el).getClientRects()[0].height * 0.5;
+      const viewHeight = window.innerHeight * 0.3;
+
+      if (elOffsetTop <= 0) {
+        if ((elOffsetTop + height) > viewHeight) {
+          setSectioncurrent(el)
+        }
+      } else if (elOffsetTop > 0 && elOffsetTop < viewHeight) {
+        setSectioncurrent(el)
+      }
     }
   }
 
   useEffect(() => {
     if (sectionids.length > 0) {
-      //console.log(sectionids[0])
       setSectioncurrent(sectionids[0])
     }
-  })
+  }, [sectionids])
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
-  }, [])
+  }, [sectionids])
 
   //console.log(document.getElementById("About").innerText)
   return (
