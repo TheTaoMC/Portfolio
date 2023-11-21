@@ -1,7 +1,7 @@
 const Description = ({ description }) => {
   return (
     <>
-      <div className="text-sm text-colortext2">{description}</div>
+      <div className="text-sm text-colortext3">{description}</div>
     </>
   );
 };

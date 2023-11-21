@@ -5,191 +5,125 @@ import {
   faLinkedin,
   faTwitter,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons"
+} from "@fortawesome/free-brands-svg-icons";
 
 export const data = {
   name: "Manote Bunyoy",
   title: "Software Developer · between jobs",
   description:
-    "From imagination to design. From design to development. From development to product. We complete it all in one place.",
+    "From initial requirements to detailed design, and through development to the final product, our integrated approach streamlines the entire process, ensuring a cohesive and efficient journey from concept to completion—all in one place.",
   btntxt: "View Resume",
   link: "",
-}
+};
 
 export const datanav = {
   title: "About",
   description:
     "I am a beginner in programming, but I am passionate about technology and eager to learn. I am always looking for opportunities to improve my skills and contribute to the field.",
-}
+};
 
 export const dataabout = {
   title: "About",
   description:
     "I am a beginner in programming, but I am passionate about technology and eager to learn. I am always looking for opportunities to improve my skills and contribute to the field.",
-}
+};
 
 export const dataEducation = [
   {
-    year: "2000",
-    img: "imgExp3",
-    contenttitle: "นโยบายการศึกษาในศตวรรษที่ 21",
+    year: "2009 - 2012",
+    img: "",
+    contenttitle: "Voc. Cert. (Ratchaburi Technical College)",
     contenttitlelink: "",
 
-    iconlinks: [
-      {
-        icon: faGithub,
-        link: "https://github.com/TheTaoMC/Educational-Policy-in-the-21st-Century",
-      },
-      { icon: faGithub, link: "" },
-    ],
-    descriptions: ["นโยบายการศึกษาในศตวรรษที่ 21 เน้นการเรียนรู้ตลอดชีวิต"],
-    tags: [
-      ["การศึกษา", "นโยบายการศึกษา"],
-      ["ศตวรรษที่ 21", "การเรียนรู้ตลอดชีวิต"],
-    ],
+    iconlinks: [],
+    descriptions: ["Electrical Power"],
+    tags: [["RTC", "Electrical Power"]],
   },
   {
-    year: "2010",
-    img: "imgExp3",
-    contenttitle: "เทคโนโลยีการศึกษา",
+    year: "2012 - 2014",
+    img: "",
+    contenttitle: "High Voc. Cert. (Ratchaburi Technical College)",
     contenttitlelink: "",
 
-    iconlinks: [
-      {
-        icon: faGithub,
-        link: "https://github.com/TheTaoMC/Educational-Technology",
-      },
-      { icon: faGithub, link: "" },
-    ],
-    descriptions: ["เทคโนโลยีการศึกษาช่วยให้การเรียนรู้มีประสิทธิภาพมากขึ้น"],
-    tags: [["การศึกษา", "เทคโนโลยีการศึกษา"], ["ประสิทธิภาพการเรียนรู้"]],
+    iconlinks: [],
+    descriptions: ["Faculty of Business Administration", "Business Computer"],
+    tags: [["RTC", "BusCom"]],
   },
   {
-    year: "2020",
-    img: "imgExp3",
-    contenttitle: "การศึกษาแบบออนไลน์",
+    year: "2014 - 2016",
+    img: "",
+    contenttitle: "B.BA. (Southeast Asia University)",
     contenttitlelink: "",
 
-    iconlinks: [
-      { icon: faGithub, link: "https://github.com/TheTaoMC/Online-Education" },
-      { icon: faGithub, link: "" },
-    ],
-    descriptions: ["การศึกษาแบบออนไลน์เป็นทางเลือกใหม่ของการศึกษา"],
-    tags: [["การศึกษา", "การศึกษาแบบออนไลน์"], ["ทางเลือกการศึกษา"]],
+    iconlinks: [],
+    descriptions: ["Faculty of Business Administration", "Business Computer"],
+    tags: [["SAU", "BusCom"]],
   },
-  {
-    year: "2030",
-    img: "imgExp3",
-    contenttitle: "การศึกษาในอนาคต",
-    contenttitlelink: "",
-
-    iconlinks: [
-      {
-        icon: faGithub,
-        link: "https://github.com/TheTaoMC/Education-in-the-Future",
-      },
-      { icon: faGithub, link: "" },
-    ],
-    descriptions: ["การศึกษาในอนาคตจะเน้นการเรียนรู้แบบมีส่วนร่วม"],
-    tags: [["การศึกษา", "การศึกษาในอนาคต"], ["การเรียนรู้แบบมีส่วนร่วม"]],
-  },
-  {
-    year: "2040",
-    img: "imgExp3",
-    contenttitle: "การศึกษาแบบอัจฉริยะ",
-    contenttitlelink: "",
-
-    iconlinks: [
-      {
-        icon: faGithub,
-        link: "https://github.com/TheTaoMC/Artificial-Intelligence-Education",
-      },
-      { icon: faGithub, link: "" },
-    ],
-    descriptions: ["การศึกษาแบบอัจฉริยะใช้เทคโนโลยีช่วยการเรียนรู้"],
-    tags: [["การศึกษา", "การศึกษาแบบอัจฉริยะ"], ["เทคโนโลยีช่วยการเรียนรู้"]],
-  },
-]
+];
 
 export const dataExperience = [
   {
-    year: "2023",
+    year: "2016",
     img: "",
-    contenttitle: "นักเขียนอิสระ",
+    contenttitle: "THEO Engineering Co, Ltd.",
     contenttitlelink: "",
     iconlinks: [
       {
-        icon: faTwitter,
-        link: "https://twitter.com/TheTaoMC",
-      },
-      {
-        icon: faFacebook,
-        link: "https://www.facebook.com/TheTaoMC",
+        icon: faLink,
+        link: "https://webv3.theo.co.th/th/contact-us-th/",
       },
     ],
-    descriptions: ["เขียนบทความเกี่ยวกับเทคโนโลยีและไลฟ์สไตล์"],
-    tags: [["เทคโนโลยี", "ไลฟ์สไตล์"]],
+    descriptions: ["Service"],
+    tags: [["Technology", "Weighing"]],
   },
   {
-    year: "2022",
+    year: "2018 - 2020",
     img: "",
-    contenttitle: "ผู้ช่วยสอน",
+    contenttitle: "THEO Engineering Co, Ltd.",
     contenttitlelink: "",
     iconlinks: [
       {
-        icon: faLinkedin,
-        link: "https://www.linkedin.com/in/TheTaoMC",
+        icon: faLink,
+        link: "https://webv3.theo.co.th/th/contact-us-th/",
       },
     ],
-    descriptions: [
-      "สอนวิชาคณิตศาสตร์และวิทยาศาสตร์ให้กับนักเรียนชั้นมัธยมศึกษา",
-    ],
-    tags: [["คณิตศาสตร์", "วิทยาศาสตร์"]],
+    descriptions: ["Software Tester"],
+    tags: [["Technology", "Weighing",'Tester']],
   },
   {
     year: "2021",
     img: "",
-    contenttitle: "ผู้พัฒนาเว็บไซต์",
+    contenttitle: "THEO Engineering Co, Ltd.",
     contenttitlelink: "",
     iconlinks: [
       {
-        icon: faGithub,
-        link: "https://github.com/TheTaoMC/Isaan_Food_House",
+        icon: faLink,
+        link: "https://webv3.theo.co.th/th/contact-us-th/",
       },
     ],
-    descriptions: [
-      "พัฒนาเว็บไซต์ร้านอาหาร Isaan_Food_House ด้วย HTML, CSS, PHP, และ MySQL",
-    ],
-    tags: [["HTML", "CSS", "PHP", "MySql"]],
+    descriptions: ["Design UI"],
+    tags: [["Technology", "Weighing",'Tester','UI']],
   },
   {
-    year: "2020",
-    img: "imgExp4",
-    contenttitle: "พนักงานขาย",
+    year: "2021 - 2023+",
+    img: "",
+    contenttitle: "THEO Engineering Co, Ltd.",
     contenttitlelink: "",
     iconlinks: [
       {
-        icon: faInstagram,
-        link: "https://www.instagram.com/TheTaoMC",
+        icon: faLink,
+        link: "https://webv3.theo.co.th/th/contact-us-th/",
       },
     ],
-    descriptions: ["ขายสินค้าอิเล็กทรอนิกส์ให้กับลูกค้า"],
-    tags: [["สินค้าอิเล็กทรอนิกส์"]],
+    descriptions: ["Project Coordinators"],
+    tags: [["Technology", "Weighing",'Tester','UI','Project Co']],
   },
-  {
-    year: "2019",
-    img: "imgExp5",
-    contenttitle: "นักศึกษา",
-    contenttitlelink: "",
-    iconlinks: [],
-    descriptions: ["ศึกษาที่คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย"],
-    tags: [["วิศวกรรมศาสตร์"]],
-  },
-]
+];
 
-import imgExp from "../assets/rn001.png"
-import imgExp2 from "../assets/webmap.png"
-import imgExp3 from "../assets/POS.jpg"
+import imgExp from "../assets/rn001.png";
+import imgExp2 from "../assets/webmap.png";
+import imgExp3 from "../assets/POS.jpg";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 export const dataProject = [
   {
     year: "2023",
@@ -268,14 +202,14 @@ export const dataProject = [
       ["Php", "MySql"],
     ],
   },
-]
+];
 
-export const dataArticle = []
+export const dataArticle = [];
 export const dataCertification = [
   {
-    year: "2019",
+    year: "2023",
     img: "",
-    contenttitle: "ทดสอบใน W3school",
+    contenttitle: "React Exercises by W3school",
     contenttitlelink: "",
 
     iconlinks: [
@@ -285,7 +219,55 @@ export const dataCertification = [
       },
       { icon: "", link: "" },
     ],
-    descriptions: ["HTML"],
-    tags: [["HTML"]],
+    descriptions: ["Test React skills with W3Schools' Exercises."],
+    tags: [["React", "Front End"]],
   },
-]
+  {
+    year: "2023",
+    img: "",
+    contenttitle: "MySQL Exercises by W3school",
+    contenttitlelink: "",
+
+    iconlinks: [
+      {
+        icon: "",
+        link: "",
+      },
+      { icon: "", link: "" },
+    ],
+    descriptions: ["Test MySQL skills with W3Schools' Exercises."],
+    tags: [["MySQL", "Back End"]],
+  },
+  {
+    year: "2023",
+    img: "",
+    contenttitle: "HTML Exercises by W3school",
+    contenttitlelink: "",
+
+    iconlinks: [
+      {
+        icon: "",
+        link: "",
+      },
+      { icon: "", link: "" },
+    ],
+    descriptions: ["Test HTML skills with W3Schools' Exercises."],
+    tags: [["HTML", "Front End"]],
+  },
+  {
+    year: "2023",
+    img: "",
+    contenttitle: "CSS Exercises by W3school",
+    contenttitlelink: "",
+
+    iconlinks: [
+      {
+        icon: "",
+        link: "",
+      },
+      { icon: "", link: "" },
+    ],
+    descriptions: ["Test CSS skills with W3Schools' Exercises."],
+    tags: [["CSS", "Front End"]],
+  },
+];

@@ -18,8 +18,8 @@ const Header = () => {
           {data.name}
           <FontAwesomeIcon icon={faCode} beat size="2xs" className="ml-2" />
         </div>
-        <div className="text-colortext3">{data.title}</div>
-        <div className="w-[85%] text-colortext2 text-sm">
+        <div className="text-colortext2">{data.title}</div>
+        <div className="w-[85%] text-colortext3 text-sm">
           {data.description}
         </div>
         <div className="mt-2 self-start">

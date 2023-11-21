@@ -27,7 +27,7 @@ const Navbar = ({ navitemsin, sectioncurrent }) => {
   }
   return (
     <>
-      <div className="flex flex-col font-semibold">
+      <div className="hidden lg:flex flex-col font-semibold">
         {navitemsin.map((e, i) => (
           <div
             key={i}
