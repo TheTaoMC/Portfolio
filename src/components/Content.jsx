@@ -18,33 +18,36 @@ import {
   dataCertification,
 } from "./Data"
 import FooterR from "./Contents/FooterR"
+import DataJson from "../Data/SKILLS.json"
 
 const Content = ({ onaddsectionidsin }) => {
+  //console.log(DataJson);
   return (
     <>
       <div className="grid gap-y-32 px-2">
-        <About onaddsectionidsin={onaddsectionidsin}  title={"About"} />
+        <About onaddsectionidsin={onaddsectionidsin} title={"About"} />
         <ContentContainer
           onaddsectionidsin={onaddsectionidsin}
-          
+          title={"SKILLS"}
+          data={DataJson}
+        />
+        <ContentContainer
+          onaddsectionidsin={onaddsectionidsin}
           title={"Education"}
           data={dataEducation}
         />
         <ContentContainer
           onaddsectionidsin={onaddsectionidsin}
-        
           title={"Experience"}
           data={dataExperience}
         />
         <ContentContainer
           onaddsectionidsin={onaddsectionidsin}
-        
           title={"Project"}
           data={dataProject}
         />
         <ContentContainer
           onaddsectionidsin={onaddsectionidsin}
-         
           title={"Certification"}
           data={dataCertification}
         />

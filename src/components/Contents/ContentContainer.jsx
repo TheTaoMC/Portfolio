@@ -6,6 +6,16 @@ import Iconlink from "../ContentDetail/Iconlink"
 import Img from "../ContentDetail/Img"
 import Tag from "../ContentDetail/Tag"
 import Year from "../ContentDetail/Year"
+import { iconMappings } from "../ContentDetail/Iconlink/IconMappings"
+
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons"
 
 /*
 <ContentContainer
@@ -16,7 +26,7 @@ import Year from "../ContentDetail/Year"
 const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
   const [ishover, setIshover] = useState({})
   //console.log("setIshover:", ishover)
-
+  //console.log(data)
   const Section_ID = `${title}-section`
 
   useEffect(() => {
@@ -60,7 +70,12 @@ const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
             {data.iconlinks.length > 0 ? (
               <div className="flex gap-2 items-center">
                 {data.iconlinks.map((data, index) => (
-                  <Iconlink key={index} icon={data.icon} link={data.link} />
+                  //<Iconlink key={index} icon={data.icon} link={data.link} />
+                  <Iconlink
+                    key={index}
+                    icon={iconMappings[data.icon] || data.icon}
+                    link={data.link}
+                  />
                 ))}
               </div>
             ) : null}
