@@ -1,12 +1,12 @@
-import { useEffect } from "react"
-import { useState } from "react"
-import Contenttitle from "../ContentDetail/Contenttitle"
-import Description from "../ContentDetail/Description"
-import Iconlink from "../ContentDetail/Iconlink"
-import Img from "../ContentDetail/Img"
-import Tag from "../ContentDetail/Tag"
-import Year from "../ContentDetail/Year"
-import { iconMappings } from "../ContentDetail/Iconlink/IconMappings"
+import { useEffect } from "react";
+import { useState } from "react";
+import Contenttitle from "../ContentDetail/Contenttitle";
+import Description from "../ContentDetail/Description";
+import Iconlink from "../ContentDetail/Iconlink";
+import Img from "../ContentDetail/Img";
+import Tag from "../ContentDetail/Tag";
+import Year from "../ContentDetail/Year";
+import { iconMappings } from "../ContentDetail/Iconlink/IconMappings";
 
 import {
   faFacebook,
@@ -15,7 +15,7 @@ import {
   faLinkedin,
   faTwitter,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons"
+} from "@fortawesome/free-brands-svg-icons";
 
 /*
 <ContentContainer
@@ -24,18 +24,26 @@ import {
 />
 */
 const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
-  const [ishover, setIshover] = useState({})
-  //console.log("setIshover:", ishover)
+  const [ishover, setIshover] = useState({});
+  const [ishovertitle, setIshovertitle] = useState({});
+  //console.log("setIshoverp:", ishovertitle);
   //console.log(data)
-  const Section_ID = `${title}-section`
+  const Section_ID = `${title}-section`;
 
   useEffect(() => {
-    onaddsectionidsin(Section_ID, title)
-  }, [])
+    onaddsectionidsin(Section_ID, title);
+  }, []);
 
   return (
     <div className="scroll-m-5" id={Section_ID}>
-      <div id={title} className="font-semibold text-colortext3 mb-4 px-2">
+      <div
+        id={title}
+        className={`font-semibold ${
+          ishovertitle[`${Section_ID}-${title}`]
+            ? "text-colortext3"
+            : "text-colortext4"
+        } mb-4 px-2`}
+      >
         {title}
       </div>
       {data.map((data, index) => (
@@ -47,8 +55,14 @@ const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
           className={`grid grid-cols-[25%_75%]  px-2 py-6 ${
             ishover[`${Section_ID}-${index}`] ? "bg-neutral-900" : ""
           }  rounded-xl `}
-          onMouseEnter={() => setIshover({ [`${Section_ID}-${index}`]: true })}
-          onMouseLeave={() => setIshover({ [`${Section_ID}-${index}`]: false })}
+          onMouseEnter={() => {
+            setIshovertitle({ [`${Section_ID}-${title}`]: true });
+            setIshover({ [`${Section_ID}-${index}`]: true });
+          }}
+          onMouseLeave={() => {
+            setIshovertitle({ [`${Section_ID}-${title}`]: false });
+            setIshover({ [`${Section_ID}-${index}`]: false });
+          }}
         >
           <div>
             {/* year */}
@@ -105,7 +119,7 @@ const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default ContentContainer
+export default ContentContainer;

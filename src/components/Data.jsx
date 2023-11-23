@@ -5,7 +5,7 @@ import {
   faLinkedin,
   faTwitter,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons"
+} from "@fortawesome/free-brands-svg-icons";
 
 export const data = {
   name: "Manote Bunyoy",
@@ -14,31 +14,21 @@ export const data = {
     "From initial requirements to detailed design, and through development to the final product, our integrated approach streamlines the entire process, ensuring a cohesive and efficient journey from concept to completion—all in one place.",
   btntxt: "View Resume",
   link: "",
-}
+};
 
 export const datanav = {
   title: "About",
   description:
     "I am a beginner in programming, but I am passionate about technology and eager to learn. I am always looking for opportunities to improve my skills and contribute to the field.",
-}
+};
 
 export const dataabout = {
   title: "About",
   description:
     "I am a beginner in programming, but I am passionate about technology and eager to learn. I am always looking for opportunities to improve my skills and contribute to the field.",
-}
+};
 
 export const dataEducation = [
-  {
-    year: "2009 - 2012",
-    img: "",
-    contenttitle: "Voc. Cert. (Ratchaburi Technical College)",
-    contenttitlelink: "",
-
-    iconlinks: [],
-    descriptions: ["Electrical Power"],
-    tags: [["RTC", "Electrical Power"]],
-  },
   {
     year: "2012 - 2014",
     img: "",
@@ -59,7 +49,7 @@ export const dataEducation = [
     descriptions: ["Faculty of Business Administration", "Business Computer"],
     tags: [["SAU", "BusCom"]],
   },
-]
+];
 
 export const dataExperience = [
   {
@@ -118,13 +108,12 @@ export const dataExperience = [
     descriptions: ["Project Coordinators"],
     tags: [["Technology", "Weighing", "Tester", "UI", "Project Co"]],
   },
-]
+];
 
-import imgExp from "../assets/rn001.png"
-import imgExp2 from "../assets/webmap.png"
-import imgExp3 from "../assets/POS.jpg"
-import Portfolio from "../assets/Portfolio.jpg"
-import { faLink } from "@fortawesome/free-solid-svg-icons"
+import imgExp from "../assets/rn001.png";
+import imgExp2 from "../assets/webmap.png";
+import Portfolio from "../assets/Portfolio.jpg";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 export const dataProject = [
   {
     year: "2023",
@@ -161,23 +150,20 @@ export const dataProject = [
   },
   {
     year: "2022",
-    img: imgExp2,
+    img: "",
     contenttitle: "WebMap",
     contenttitlelink: "",
 
-    iconlinks: [
-      { icon: faGithub, link: "https://github.com/TheTaoMC/Isaan_Food_House" },
-      { icon: faGithub, link: "" },
-    ],
-    descriptions: ["3 WebMap of Company.", "4 WebMap of Company."],
+    iconlinks: [],
+    descriptions: ["WebMap of Company."],
     tags: [
       ["HTML", "Bootstrap 5"],
       ["PHP", "MySql"],
     ],
   },
-]
+];
 
-export const dataArticle = []
+export const dataArticle = [];
 export const dataCertification = [
   {
     year: "2023",
@@ -243,4 +229,4 @@ export const dataCertification = [
     descriptions: ["Test CSS skills with W3Schools' Exercises."],
     tags: [["CSS", "Front End"]],
   },
-]
+];

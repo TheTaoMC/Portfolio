@@ -33,17 +33,17 @@ function App() {
     for (let index = 0; index < sectionids.length; index++) {
       const el = sectionids[index]
       const elOffsetTop = document.getElementById(el).getClientRects()[0].y
-      console.log("y : ", elOffsetTop)
+      //console.log("y : ", elOffsetTop)
       const height =
         document.getElementById(el).getClientRects()[0].height * 0.5
-      console.log(
+    /*   console.log(
         "h : ",
         document.getElementById(el).getClientRects()[0].height
-      )
-      console.log("h*0.2 : ", height)
+      ) */
+      //console.log("h*0.2 : ", height)
       const viewHeight = window.innerHeight * 0.3
-      console.log("vp : ", window.innerHeight)
-      console.log("vp*0.3 : ", viewHeight)
+      //console.log("vp : ", window.innerHeight)
+      //console.log("vp*0.3 : ", viewHeight)
       if (elOffsetTop <= 0) {
         if (elOffsetTop + height > viewHeight) {
           setSectioncurrent(el)
