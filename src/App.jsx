@@ -1,3 +1,4 @@
+/* เสร็จแล้ว ถ้าไม่เปลี่ยนอะไร v.1 */
 import "./App.css";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
