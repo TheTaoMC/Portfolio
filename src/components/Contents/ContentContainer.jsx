@@ -16,6 +16,13 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCaretRight,
+  faLocationDot,
+  faMinus,
+  faTerminal,
+} from "@fortawesome/free-solid-svg-icons";
 
 /*
 <ContentContainer
@@ -23,12 +30,19 @@ import {
     data={[]}
 />
 */
-const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
+const ContentContainer = ({
+  onaddsectionidsin,
+  title,
+  data = [],
+  sectioncurrent,
+}) => {
   const [ishover, setIshover] = useState({});
   const [ishovertitle, setIshovertitle] = useState({});
   //console.log("setIshoverp:", ishovertitle);
-  //console.log(data)
+  console.log(sectioncurrent);
   const Section_ID = `${title}-section`;
+
+  //console.log(Section_ID, " = ", Section_ID);
 
   useEffect(() => {
     onaddsectionidsin(Section_ID, title);
@@ -37,14 +51,35 @@ const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
   return (
     <div className="scroll-m-5" id={Section_ID}>
       <div
-        id={title}
-        className={`font-semibold ${
-          ishovertitle[`${Section_ID}-${title}`]
-            ? "text-colortext3"
+        id={Section_ID}
+        className={`font-semibold flex
+        ${
+          sectioncurrent.indexOf(Section_ID) > -1
+            ? "text-colortext1"
             : "text-colortext4"
         } mb-4 px-2`}
       >
-        {title}
+        <div>
+          <FontAwesomeIcon
+            className={`text-xl self-center align-middle ${
+              sectioncurrent === Section_ID ||
+              ishovertitle[`${Section_ID}-${title}`]
+                ? "new-arrow text-colortext1"
+                : "hidden text-colortext4"
+            }`}
+            icon={faCaretRight}
+          />
+        </div>
+        <div
+          className={`text-xl self-center  ${
+            sectioncurrent.indexOf(Section_ID) > -1 ||
+            ishovertitle[`${Section_ID}-${title}`]
+              ? "translate-x-4 text-colortext1"
+              : " text-colortext3"
+          } duration-500 ease-out`}
+        >
+          {title}
+        </div>
       </div>
       {data.map((data, index) => (
         <div
@@ -53,7 +88,7 @@ const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
             ""
           )}`}
           className={`grid grid-cols-[25%_75%]  px-2 py-6 ${
-            ishover[`${Section_ID}-${index}`] ? "bg-neutral-900" : ""
+            ishover[`${Section_ID}-${index}`] ? "bg-colortext5 shadow-xl" : ""
           }  rounded-xl `}
           onMouseEnter={() => {
             setIshovertitle({ [`${Section_ID}-${title}`]: true });
@@ -99,13 +134,6 @@ const ContentContainer = ({ onaddsectionidsin, title, data = [] }) => {
             ))}
             <div>
               {/* Tag */}
-              {/*                {data.tags.map((data, index) => (
-              <Tag
-                key={index}
-                ishoverin={ishover[`${Section_ID}-${index}`]}
-                datain={data}
-              />
-            ))} */}
 
               {data.tags.map((e, i) => (
                 <Tag
