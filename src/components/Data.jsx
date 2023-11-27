@@ -112,7 +112,8 @@ export const dataExperience = [
 
 import imgExp from "../assets/rn001.png";
 import imgExp2 from "../assets/webmap.png";
-import Portfolio from "../assets/Portfolio.jpg";
+import Portfolio from "../assets/Portfolio.gif";
+import Sidebar from "../assets/ChatGPT-Sidebar.gif";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 export const dataProject = [
   {
@@ -163,7 +164,23 @@ export const dataProject = [
   },
 ];
 
-export const dataArticle = [];
+export const dataArticle = [
+  {
+    year: "2023",
+    img: Portfolio,
+    contenttitle: "Portfolio",
+    contenttitlelink: "https://www.thetaomc.xyz/",
+
+    iconlinks: [
+      { icon: faGithub, link: "https://github.com/TheTaoMC/Portfolio" },
+    ],
+    descriptions: ["My Portfolio"],
+    tags: [
+      ["React Native", "React Native Paper"],
+      ["NodeJS", "ExpressJS", "MySql"],
+    ],
+  },
+];
 export const dataCertification = [
   {
     year: "2023",
